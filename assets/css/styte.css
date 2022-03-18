@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    cursor: url('/assets/cursor/sym49.cur'),auto;
+    cursor: url('./assets/cursor/sym49.cur'),auto;
    
 }
 
