@@ -1,0 +1,125 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: url('/assets/cursor/sym49.cur'),auto;
+   
+}
+
+
+.row {
+    width: 100%;
+    height: 50%;
+    margin-top: 100px;
+}
+.btns {
+    width: 40%;
+    height: 50%;
+    border: none;
+    padding: 20px;
+    margin: 0px 20px;
+}
+
+.row .btns:hover {
+    background: rgb(202, 168, 168);
+}
+
+.page-close {
+    display: none;
+}
+.page-open {
+    display: block !important;
+}
+#main {
+    height: 750px;
+    background: url('/assets/img/background/img.webp') top center / cover no-repeat;
+}
+
+.page1 {
+    position: relative;
+    height: 750px;
+    
+    
+}
+
+.page1 .box {
+    background: white;
+    height: 40vh;
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)  translateY(-35%);
+    text-align: center;
+    
+}
+
+.page1 .avt {
+    width: 10%;
+    position: absolute;
+}
+
+.page1 .avt1 {
+    top: 300px;
+    right: 30px;
+}
+
+.page1 .avt2 {
+    top: 330px;
+    left: 30px;
+}
+
+.page1 .avt3 {
+    bottom: 10px;
+    right: 200px;
+}
+
+.page1 .avt4 {
+    bottom: 10px;
+    left: 200px;
+}
+
+.page1 .avt5 {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8.5% !important;
+}
+
+.box .title {
+    font-size: 40px;
+}
+
+.page2 {
+    position: relative;
+    height: 750px;
+    display: none;
+
+}
+
+.page2 .video {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-43%);
+    
+}
+
+.page2 .video video {
+    float: left;
+    width: 20%;
+    margin: 10px;   
+}
+
+.page2 .btn-pre {
+    width: 30%;
+    position: absolute;
+    bottom: 1%;
+    right: -15%;
+}
+
+.page2 .btn-pre button {
+    background-color: #fff;
+}

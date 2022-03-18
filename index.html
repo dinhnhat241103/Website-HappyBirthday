@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HappyBirthday</title>
+        <meta charset="uft - 8">
+        <link rel="icon" type="image/x-icon" href="./assets/img/Favicon/e966b59d12f16cb22ef7f14d30ea2076.png">
+        <link rel="stylesheet" href="./assets/css/styte.css">
+        <link rel="stylesheet" href="./assets/Font/cute-maple-font/CuteMaple-3zO9y.ttf">
+       
+    </head>
+    <body>
+        <audio autoplay>
+            <source src="./assets/audio/Happy Birthday To You! (Traditional) First Time on YouTube.mp3" type="audio/mpeg">
+        </audio>
+        <div id="main">
+            <div class="page page1">
+                <div class="box">
+                    <h3 class="title font-text" >Bạn muốn nhận quà không ? </h3>
+                    <div class="row">
+                        <button type="button" class="btns btn1 js-btns-page">
+                            Có
+                        </button>
+                        <button id="No" type="button" class="btns btn2 js-btns-page">
+                            Không
+                        </button>
+                    </div>
+                </div>
+                <img class="avt avt1" src="/assets/img/Person/263574236_201530542184340_6339245608520832980_n.jpg" alt="Thảo nè">
+                <img class="avt avt2" src="/assets/img/Person/267010151_4580175888746115_9102503061778175307_n.jpg" alt="Thảo nè">
+                <img class="avt avt3" src="/assets/img/Person/267598752_646661793370112_3527134036459518697_n.jpg" alt="Thảo nè">
+                <img class="avt avt4" src="/assets/img/Person/269696110_216661660631622_1351386934698410840_n.jpg" alt="Thảo nè">
+                <img class="avt avt5" src="/assets/img/Person/263563215_202272015443097_397921779145954644_n.jpg" alt="Thảo nè">
+            </div>
+           
+            <div class="page page2">
+                <div class="video">
+                    <video src="/assets/vid/imageedit_29_4770363912.mp4" controls></video>
+                    <video src="/assets/vid/imageedit_33_2090387443.mp4" controls></video>
+                    <video src="/assets/vid/imageedit_36_9038075210.mp4" controls></video>
+                    <video src="/assets/vid/imageedit_38_5008630498.mp4" controls></video>
+                </div>
+                <div class="btn-pre" id="js-btn-pre">
+                    <button class="btns">Trang trước</button>
+                </div>
+                
+            </div>
+        </div>
+        <script>
+           var btnNo = document.getElementById("No");
+           var btnPre = document.getElementById("js-btn-pre");
+           const pageNext = document.querySelectorAll('.js-btns-page')
+           const pageOne = document.querySelector('.page1')
+           const pageSecond = document.querySelector('.page2')
+           
+           btnNo.onmouseenter = function(){
+               btnNo.innerHTML = 'Có' ;
+           };
+           btnNo.onmouseleave = function(){
+               btnNo.innerHTML = 'Không';
+           };
+           btnPre.onclick = function(){
+               location.reload();
+           };
+           for(const btns of pageNext){
+               btns.addEventListener('click',function(event){
+                    pageOne.classList.add('page-close');
+                    pageSecond.classList.add('page-open')
+               })
+           }
+           
+
+        </script>
+        
+    </body>
+</html>
